@@ -1,0 +1,295 @@
+// 初始化样式
+.dn {
+  display: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  vertical-align: middle;
+}
+
+input,
+select {
+  outline: none;
+  background: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+div {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+img[src=""] {
+  display: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+li{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+/*====== 建议body给稿子底色背景 ==============*/
+
+//表单提示文字颜色
+::-webkit-input-placeholder {
+  color: #411275;
+}
+
+
+//定义设计稿宽度
+@screenWidth: 750;
+//换算vw
+@vw : (@screenWidth/100vw);
+.setwh(@w: 750, @h: 1448) {
+  width:(@w/@vw);
+  height: (@h/@vw);
+}
+.pg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  .setwh(750, 1448);
+}
+//less 定位函数 左上
+.lt(@l: 0, @t: 0) {
+  position: absolute;
+  left: (@l/@vw);
+  top: (@t/@vw);
+}
+
+//右上
+.rt(@r: 0, @t: 0) {
+  position: absolute;
+  right: (@r/@vw);
+  top: (@t/@vw);
+}
+
+//less 定位函数 左下
+.lb(@l: 0, @b: 0) {
+  position: absolute;
+  left: (@l/@vw);
+  bottom: (@b/@vw);
+}
+
+//右下
+.rb(@r: 0, @b: 0) {
+  position: absolute;
+  right: (@r/@vw);
+  bottom: (@b/@vw);
+}
+
+.cl(@w) {
+  position: absolute;
+  left: 50%;
+  margin-left: (-@w/2/@vw);
+}
+
+.ct(@h) {
+  position: absolute;
+  top: 50%;
+  margin-top: (-@h/2/@vw);
+}
+/* 头部 */ 
+.box{
+    width: 100%;
+    background-color:#3F4752 ;
+}
+.head{
+  position: relative;
+  width: 100%;
+  height: (420/@vw);
+  margin-bottom: (2/@vw);
+  overflow: hidden;
+}
+.h-img{
+  width: 100%;
+  height: 100%;
+}
+.head-portrait{
+  .cl(100);
+  top: (100/@vw);
+  width: (100/@vw);
+  height: (100/@vw);
+  border: 2px solid #a0f1e5;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.head p{
+  .lt(0,220);
+  width: 100%;
+  text-align: center;
+  font-size: (30/@vw);
+  color: #a0f1e5;
+}
+.purpose{
+  .cl(400);
+  top: (300/@vw);
+  .setwh(400, 50);
+  background-color:#24382D;
+  text-align: center;
+  line-height: (50/@vw);
+  font-size: (30/@vw);
+  color: rgb(202, 191, 191);
+}
+/* 内容 */ 
+.body{
+  background-color:#182622 ;
+}
+.body h3{
+  text-align: center;
+  font-size: (40/@vw);
+  line-height: (100/@vw);
+  color: #fff;
+  font-weight: 400;
+}
+/* 关于我 */ 
+.about-me{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: (300/@vw);
+  background-color: #485247;
+  color: #fff;
+  font-size: (35/@vw);
+  line-height: (50/@vw);
+}
+.about-me p{
+  width: 50%;
+  box-sizing: border-box;
+  font-size: (28/@vw);
+  line-height: (50/@vw);
+}
+.about-me p:nth-of-type(2n-1){
+  padding-left: 5%;
+  box-sizing: border-box;
+}
+.title {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: (20/@vw);
+  padding-left: 5%;
+  color: #befff7;
+  font-size: (45/@vw);
+  line-height: (60/@vw);
+}
+.title .iconfont{
+  font-size: (80/@vw);
+}
+/* 技能 */ 
+.skill{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: (550/@vw);
+  padding-top: (40/@vw);
+  background-color: #485247;
+  color: #fff;
+  line-height: (50/@vw);
+}
+.skill ul{
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 5%;
+}
+.skill li{
+  display: flex;
+  align-items: center;
+  height: (50/@vw);
+  line-height: (50/@vw);
+}
+.skill li span{
+  width: 25%;
+  text-align: right;
+  font-size: (30/@vw);
+}
+.skill li i{
+  height: (30/@vw);
+  width: 60%;
+  margin-left: 5%;
+  background-color: #a0f1e5;
+}
+.skill li:nth-of-type(1) i{
+  width: 60%;
+}
+.skill li:nth-of-type(2) i{
+  width: 20%;
+}
+.skill li:nth-of-type(3) i{
+  width: 55%;
+}
+.skill li:nth-of-type(4) i{
+  width: 45%;
+}
+.skill li:nth-of-type(5) i{
+  width: 50%;
+}
+.skill li:nth-of-type(6) i{
+  width: 50%;
+}
+.skill li:nth-of-type(7) i{
+  width: 30%;
+}
+.skill li:nth-of-type(8) i{
+  width: 20%;
+}
+.skill li:nth-of-type(9) i{
+  width: 40%;
+}
+.skill li:nth-of-type(10) i{
+  width: 40%;
+}
+/* 项目经历 */ 
+.experience{
+  width: 100%;
+  padding: (40/@vw);
+  background-color: #485247;
+  box-sizing: border-box;
+  color: #ccc;
+}
+.experience p{
+  font-size: (30/@vw);
+  margin-bottom: (30/@vw);
+}
+.experience a {
+  text-decoration: none;
+  padding: (5/@vw) (20/@vw);
+  margin-right: (40/@vw);
+  font-size: (30/@vw);
+  border-radius: (5/@vw);
+  box-sizing: border-box;
+  // background-color: #fff;
+  color: #fff;
+}
+.tab{
+  margin-top: (20/@vw);
+}
+.experience .active{
+  background-color: #79cabd;
+  color: #fff;
+}
+
+
+/* 个人总结 */ 
+.summarize{
+  width: 100%;
+  padding: (40/@vw);
+  box-sizing: border-box;
+  background-color: #485247;
+  color: #fff;
+  font-size: (30/@vw);
+  line-height: (50/@vw);
+}

@@ -1,0 +1,242 @@
+.dn {
+  display: none;
+}
+img {
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  vertical-align: middle;
+}
+input,
+select {
+  outline: none;
+  background: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+div {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+img[src=""] {
+  display: none;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+/*====== 建议body给稿子底色背景 ==============*/
+::-webkit-input-placeholder {
+  color: #411275;
+}
+.pg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 193.06666667vw;
+}
+/* 头部 */
+.box {
+  width: 100%;
+  background-color: #3F4752;
+}
+.head {
+  position: relative;
+  width: 100%;
+  height: 56vw;
+  margin-bottom: 0.26666667vw;
+  overflow: hidden;
+}
+.h-img {
+  width: 100%;
+  height: 100%;
+}
+.head-portrait {
+  position: absolute;
+  left: 50%;
+  margin-left: -6.66666667vw;
+  top: 13.33333333vw;
+  width: 13.33333333vw;
+  height: 13.33333333vw;
+  border: 2px solid #a0f1e5;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.head p {
+  position: absolute;
+  left: 0vw;
+  top: 29.33333333vw;
+  width: 100%;
+  text-align: center;
+  font-size: 4vw;
+  color: #a0f1e5;
+}
+.purpose {
+  position: absolute;
+  left: 50%;
+  margin-left: -26.66666667vw;
+  top: 40vw;
+  width: 53.33333333vw;
+  height: 6.66666667vw;
+  background-color: #24382D;
+  text-align: center;
+  line-height: 6.66666667vw;
+  font-size: 4vw;
+  color: #cabfbf;
+}
+/* 内容 */
+.body {
+  background-color: #182622;
+}
+.body h3 {
+  text-align: center;
+  font-size: 5.33333333vw;
+  line-height: 13.33333333vw;
+  color: #fff;
+  font-weight: 400;
+}
+/* 关于我 */
+.about-me {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 40vw;
+  background-color: #485247;
+  color: #fff;
+  font-size: 4.66666667vw;
+  line-height: 6.66666667vw;
+}
+.about-me p {
+  width: 50%;
+  box-sizing: border-box;
+  font-size: 3.73333333vw;
+  line-height: 6.66666667vw;
+}
+.about-me p:nth-of-type(2n-1) {
+  padding-left: 5%;
+  box-sizing: border-box;
+}
+.title {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 2.66666667vw;
+  padding-left: 5%;
+  color: #befff7;
+  font-size: 6vw;
+  line-height: 8vw;
+}
+.title .iconfont {
+  font-size: 10.66666667vw;
+}
+/* 技能 */
+.skill {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 73.33333333vw;
+  padding-top: 5.33333333vw;
+  background-color: #485247;
+  color: #fff;
+  line-height: 6.66666667vw;
+}
+.skill ul {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 5%;
+}
+.skill li {
+  display: flex;
+  align-items: center;
+  height: 6.66666667vw;
+  line-height: 6.66666667vw;
+}
+.skill li span {
+  width: 25%;
+  text-align: right;
+  font-size: 4vw;
+}
+.skill li i {
+  height: 4vw;
+  width: 60%;
+  margin-left: 5%;
+  background-color: #a0f1e5;
+}
+.skill li:nth-of-type(1) i {
+  width: 60%;
+}
+.skill li:nth-of-type(2) i {
+  width: 20%;
+}
+.skill li:nth-of-type(3) i {
+  width: 55%;
+}
+.skill li:nth-of-type(4) i {
+  width: 45%;
+}
+.skill li:nth-of-type(5) i {
+  width: 50%;
+}
+.skill li:nth-of-type(6) i {
+  width: 50%;
+}
+.skill li:nth-of-type(7) i {
+  width: 30%;
+}
+.skill li:nth-of-type(8) i {
+  width: 20%;
+}
+.skill li:nth-of-type(9) i {
+  width: 40%;
+}
+.skill li:nth-of-type(10) i {
+  width: 40%;
+}
+/* 项目经历 */
+.experience {
+  width: 100%;
+  padding: 5.33333333vw;
+  background-color: #485247;
+  box-sizing: border-box;
+  color: #ccc;
+}
+.experience p {
+  font-size: 4vw;
+  margin-bottom: 4vw;
+}
+.experience a {
+  text-decoration: none;
+  padding: 0.66666667vw 2.66666667vw;
+  margin-right: 5.33333333vw;
+  font-size: 4vw;
+  border-radius: 0.66666667vw;
+  box-sizing: border-box;
+  color: #fff;
+}
+.tab {
+  margin-top: 2.66666667vw;
+}
+.experience .active {
+  background-color: #79cabd;
+  color: #fff;
+}
+/* 个人总结 */
+.summarize {
+  width: 100%;
+  padding: 5.33333333vw;
+  box-sizing: border-box;
+  background-color: #485247;
+  color: #fff;
+  font-size: 4vw;
+  line-height: 6.66666667vw;
+}

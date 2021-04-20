@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="gerenxinxi" unicode="&#58881;" d="M829.7 145.1L661 213.9s-32.2 13-44.7 25.9c-8 8.3-7.4 27.8-0.4 52.6 7.1 24.9 93.5 126 93.5 217.9 0 141.9-89.1 256.9-199.1 256.9s-199.1-115-199.1-256.9c0-88 77-192.9 86.6-212 9.5-19 7.2-48.1-0.3-56.9-11.3-13.2-52.5-26.5-52.5-26.5l-152-70.8c-35.5-13.3-63.3-48.4-63.3-88v-18.7c0-43.2 33.5-69.6 74.7-69.6h614c41.2 0 74.7 26.4 74.7 69.6v18.7c0 39.5-27.9 75.7-63.4 89z m0 0"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>

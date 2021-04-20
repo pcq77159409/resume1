@@ -1,0 +1,16 @@
+{
+  "id": "2497595",
+  "name": "resume",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "10359979",
+      "name": "个人信息",
+      "font_class": "gerenxinxi",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    }
+  ]
+}
